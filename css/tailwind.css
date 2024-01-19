@@ -33,3 +33,21 @@ input:-webkit-autofill:focus {
 .katex-display {
   overflow: auto hidden;
 }
+
+.typed-cursor {
+  /* width: 20px;
+  background-color: #073804;
+  overflow: hidden; */
+}
+
+p {
+  line-height: 32px;
+}
+
+* {
+  transition: background-color .15s ease-in-out,border-color .15s ease-in-out
+}
+
+a {
+  word-wrap: break-word;
+}

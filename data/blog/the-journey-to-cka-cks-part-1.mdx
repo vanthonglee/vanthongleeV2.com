@@ -1,0 +1,102 @@
+---
+title: The Journey to CKA | CKS [part 1]
+date: '2024-01-18'
+tags: ['cka', 'kubernetes']
+draft: false
+summary: My personal note on preparation of CKA
+---
+
+As a Frontend-focused Software Engineer, I’ve been captivated by the world of Kubernetes, a technology integral to my team’s daily work. Eager to deepen my understanding, I embarked on the journey to attain the triad of Kubernetes certifications — CKAD, CKA, and the most challenging, CKS. Having achieved CKA last June, I’m humbly thrilled to announce my recent success in obtaining the CKS certification, further solidifying my expertise in Kubernetes and enriching my overall skill set.
+
+Today, I’d like to share my experience preparing for the CKA certification in hopes that it will help you avoid the pitfalls I encountered and save you time on your own certification journey.
+
+![](https://cdn-images-1.medium.com/max/2474/1*aqMO01D0ZwtME3nxFaCX7g.jpeg)
+
+**TL;DR:**
+
+[KodeKloud's CKA Certification Course](https://kodekloud.com/courses/certified-kubernetes-administrator-cka/)
+
+[Kubernetes Documentation](https://kubernetes.io/docs/home/)
+
+[Killercoda Interactive Environments](https://killercoda.com/learn)
+
+After you purchase CKA you can receive 2 sessions(36h per one) to access mock exam environments:
+
+[Killer Shell - Exam Simulators](https://killer.sh/)
+
+## Overview of the CKA
+
+The CKA exam is a performance-based assessment that evaluates your practical skills in Kubernetes administration.
+
+**Fee**: 395$
+
+**Time**: 2h
+
+**Total Questions**: 17 questions
+
+**Passing Score**: 66%
+
+The CKA exam covers five main domains, each with a specific weighting in the exam:
+
+ 1. Cluster Architecture, Installation & Configuration (25%)
+
+ 2. Workloads & Scheduling (15%)
+
+ 3. Services & Networking (20%)
+
+ 4. Storage (10%)
+
+ 5. Troubleshooting (30%)
+
+Ref: [CKA Curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.28.pdf) published by CNCF
+
+Latest Update till Jan 2024:
+
+* In the actual exam, the weightage of each task is now not disclosed. This means that you won’t know the relative importance of each task, which can affect how you prioritize them during the exam.
+
+* Exam environment: Ubuntu 20.04
+
+## Personal Experience
+
+The keywords are **Practice, Time Management**. Yes you need to practice a lot to familiarize yourself with all domains of CKA curriculum till you feel confident.
+
+To prepare for the CKA exam efficiently, I recommend the following approach:
+
+ 1. Quickly review the theory by watching Mumshad’s course videos.
+
+ 2. Dive into practice labs on Mumshad’s course and KillerKoda to gain hands-on experience.
+
+ 3. Prioritize practice over passive learning by reading the documentation and applying what you learn simultaneously.
+
+ 4. After covering all the exam domains, take the mock exams on [Killer.sh](https://killer.sh/) to experience a simulated exam environment using Linux Ubuntu 20.
+
+It’s perfectly fine to fail mock exams. Don’t be afraid of failure, but approach it positively as an opportunity to learn from your mistakes and improve.
+
+**Practical Tips:**
+
+* Get familiar with the commands used to perform basic operations (such as getting, listing, creating, editing, and deleting) on resources.
+
+* Get used to querying resource information with **jsonpath**, **jq**, and **yq**.
+
+* After you become familiar with various commands using kubectl, you can start referring to a quick reference guide for kubectl commands: [https://kubernetes.io/docs/reference/kubectl/quick-reference/](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
+
+* Be aware that there may be issues with copy-pasting text when accessing the linux-based host of cluster nodes. If you encounter this problem, a quick solution is to modify the vim configuration as follows:
+
+```bash
+  # ~/.vimrc 
+  set tabstop=2
+  set expandtab
+  set shiftwidth=2
+```
+* It’s important to practice the lab exercises repeatedly until you have a deep understanding of how they work and can complete them efficiently. Simply memorizing the solutions without practicing the underlying concepts is not an effective way to learn.
+
+<i>[Optional] If you want to gain a deep understanding of how Kubernetes works, you may find this repository helpful:</i>
+[https://github.com/kelseyhightower/kubernetes-the-hard-way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
+
+## Conclusion
+
+In this article, I’ve shared my personal experience preparing for the CKA certification. To gain a well-rounded understanding, I recommend seeking out additional resources and perspectives relating to CKA.
+
+— -
+
+Stay tuned for the next article in this series, ‘**The Journey to CKA|CKS [Part 2]**’, where I’ll share my preparation for the CKS certification.
